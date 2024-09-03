@@ -87,5 +87,9 @@ This approach enables a systematic analysis of each company's stock, providing b
 14. Summary:
 The extended code builds upon the initial analysis by incorporating two approaches to predictive modeling. The first approach uses only the historical closing prices, focusing on identifying patterns within the target variable itself. The second approach enhances prediction accuracy by including multiple features, allowing the model to capture both linear and non-linear relationships.
 The use of LSTM networks, which are particularly suited for time series forecasting, enables the models to make predictions based on historical data. The enhanced model, with its ability to consider a broader set of influencing factors, generally provides more accurate and insightful predictions.
+
+The predictive algorithms recognises the trends and follows it while under and over predicting by slight margin. This allows to get better insight into investing in each stock and how each stock can fluctuate. Predicting values for each stock with 100% accuracy cannot be achieved as there are several other factors affecting the price which cannot be introduced into the dataset.
+
 The code is modular and flexible, with functions that allow for the application of different datasets, and it includes comprehensive visualizations to aid in the interpretation of results.
+
 This explanation highlights how the second, more feature-rich model provides a better prediction by leveraging the full set of available data, rather than relying solely on the target variable.
