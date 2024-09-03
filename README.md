@@ -12,11 +12,12 @@ After retrieving the data, the script adds a column called "company_name" to eac
 For each company, the script prints general information about the stock data (company.info()) and descriptive statistics (company.describe()).
 The script calculates the global minimum and maximum adjusted closing prices across all companies to ensure consistency in the visualizations.
 
-3. Visualizing Closing Prices:
+3. Interactive Visualizing: Interactive graphs are implemented which cannot be rendered using github compiler. Using interactive graphs helps in getting precise values and improves insights.
+   a. Closing Prices:
 
 The script creates subplots for the adjusted closing prices of each company using the plotly library. Each subplot displays the closing prices over time, with consistent y-axis ranges.
 
-4. Visualizing Trading Volume:
+  b.  Trading Volume:
 
 Another set of subplots is generated to visualize the trading volume of each company. These subplots are also created using plotly, with x-axes labeled as "Date" and y-axes labeled as "Sales volume".
 
@@ -28,11 +29,11 @@ The moving averages and adjusted closing prices are plotted using Matplotlib in 
 6. Daily Returns Analysis:
 
 The script calculates the daily returns for each stock by taking the percentage change of the adjusted closing prices.
-Subplots are created to visualize these daily returns, displayed as dashed lines with markers.
+Interactive Subplots are created to visualize these daily returns, displayed as dashed lines with markers for better insights.
 
 7. Histogram of Daily Returns:
 
-The script generates histograms for the daily returns of each company, providing a visual representation of the distribution of returns.
+The script generates histograms for the daily returns of each company, providing a  Interactive visual representation of the distribution of returns.
 
 8. Correlation Analysis:
 
@@ -44,7 +45,7 @@ Finally, two heatmaps are created to visualize the correlation matrices: one for
 
 The code calculates the standard deviation (risk) and mean (expected return) of the daily returns for each stock.
 It then creates an interactive scatter plot using plotly to visualize the relationship between risk and expected return.
-The plot is enhanced with custom marker sizes based on the squared standard deviation (to emphasize risk differences) and a color scale to represent the expected return-to-risk ratio.
+The plot is enhanced with custom marker sizes based on the squared standard deviation (to emphasize risk differences) and a color scale to represent the expected return-to-risk ratio and provide better insights of each stock.
 The layout is adjusted for clarity, with hover templates providing detailed information for each stock.
 
 10. LSTM Model for Stock Price Prediction Using Target Value Only:
